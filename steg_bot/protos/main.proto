@@ -1,0 +1,26 @@
+syntax = "proto3";
+option csharp_namespace = "Steg";
+service SteganographyService 
+{
+    rpc Hide (HideRequest) returns (HideResponse);
+    rpc Extract (ExtractRequest) returns (ExtractResponse);
+}
+message HideRequest
+{
+    bytes image = 1;
+    bytes secret_encrypted = 2;
+}
+message HideResponse
+{
+    bytes stego_image = 1;
+    string error = 2; 
+}
+message ExtractRequest
+{
+    bytes stego_image = 1;
+}
+message ExtractResponse
+{
+    bytes secret_decrypted = 1;
+    string error = 2;
+}
