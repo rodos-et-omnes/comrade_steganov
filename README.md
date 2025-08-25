@@ -15,7 +15,7 @@ Commands for telegram bot:
 
 | /hide - insert text into image     |
 | /extract - extract text from image |
-| /help - show this message          |
+| /help - show help message          |
 | /ping - check if the bot's alive   |
 
 
