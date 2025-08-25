@@ -13,11 +13,10 @@ Built with:
 
 Commands for telegram bot:
 
-+------------------------------------+
 | /hide - insert text into image     |
 | /extract - extract text from image |
 | /help - show this message          |
 | /ping - check if the bot's alive   |
-+------------------------------------+
+
 
 MIT license
